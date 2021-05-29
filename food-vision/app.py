@@ -50,8 +50,8 @@ else:
 st.sidebar.markdown("Created by **Gaurav Reddy**")
 st.sidebar.markdown(body="""
  <tr>
- <th style="border: none; background-color: rgba(0, 0, 0, 0);"><a href="https://twitter.com/gaurxvreddy" target="blank"><img align="center" src="https://bit.ly/3wK17I6" alt="gaurxvreddy" height="40" width="40" /></a></th>
- <th style="border: none; background-color: rgba(0, 0, 0, 0);"><a href="https://linkedin.com/in/gauravreddy08" target="blank"><img align="center" src="https://bit.ly/3wCl82U" alt="gauravreddy08" height="40" width="40" /></a></th>
+ <th><a href="https://twitter.com/gaurxvreddy" target="blank"><img align="center" src="https://bit.ly/3wK17I6" alt="gaurxvreddy" height="40" width="40" /></a></th>
+ <th><a href="https://linkedin.com/in/gauravreddy08" target="blank"><img align="center" src="https://bit.ly/3wCl82U" alt="gauravreddy08" height="40" width="40" /></a></th>
  <th style="border: none; background-color: rgba(0, 0, 0, 0);"><a href="https://github.com/gauravreddy08" target="blank"><img align="center" src="https://bit.ly/3c2onZS" alt="16034820" height="40" width="40" /></a></th>
  <th style="border: none; background-color: rgba(0, 0, 0, 0);"><a href="https://instagram.com/gaurxv_reddy" target="blank"><img align="center" src="https://bit.ly/3oZABHZ" alt="gaurxv_reddy" height="40" width="40" /></a> </th>
  </tr>
