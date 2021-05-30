@@ -2,13 +2,13 @@
 
 As an introductory project to myself, I built an end-to-end **CNN Image Classification Model** which identifies the food in your image. 
 
-I worked out with a Pre-Trained Image Classification Model that comes with Keras and then retarining it on the infamous **Food101** Dataset.
+I worked out with a Pre-Trained Image Classification Model that comes with Keras and then retrained it on the infamous **Food101** Dataset.
 
 ### Fun Fact 
 
-The Model actually beats the [**DeepFood**](https://arxiv.org/pdf/1606.05675.pdf) Paper's model which also trained on the same dataset
+The Model actually beats the [**DeepFood**](https://arxiv.org/pdf/1606.05675.pdf) Paper's model which also trained on the same dataset.
 
-The Accuracy of DeepFood was **77.4%** and out models it **78.4%** . Difference of **1%** ain't much but the interesting is their model had to run for **2-3 days** while our's barely took **1hr** to build
+The Accuracy of DeepFood was **77.4%** and out models it **78.4%** . Difference of **1%** ain't much but the interesting is, DeepFood's model took **2-3 days** to train while our's barely took **30min**.
 
 > ###### **Dataset used :**  **`Food101`**
 
@@ -18,20 +18,19 @@ The Accuracy of DeepFood was **77.4%** and out models it **78.4%** . Difference 
 
 Finally after training the models, I have exported them as `.hdf5` files and then integrated it with **Streamlit Web App**. 
 
-**Streamlit** turns data scripts into shareable web apps in minutes. Once I got the App working on my local device I then deployed it using Streamlit’s invite-only **[sharing feature](https://streamlit.io/sharing)**
+**Streamlit** turns data scripts into shareable web apps in minutes. 
+Once I got the App working on my local device I then deployed it using Streamlit’s invite-only **[sharing feature](https://streamlit.io/sharing)**
 
-#### To view the Deployed app, [Click here](https://share.streamlit.io/gauravreddy08/food-vision/main/food-vision/app.py)
+### To view the Deployed app, [Click here](https://share.streamlit.io/gauravreddy08/food-vision/main/food-vision/app.py)
 
 > The app may take a couple of seconds to load for the first time, but it works perfectly fine.
 
 ![Screenshot 2021-05-29 at 6.01.44 PM](./extras/page.png)
-
 Once an app is loaded, 
-
 1. In the sidebar, select a model which you would like to use.
-2. Upload an image of food. If you dont have one use the images from `extras/food-images`
-3. Once the Image is processed, **Predict** button appears.
-4. Once you click the **Predict** button, the model prediction takes place and the outpu will be displayed along with model's **Top-5 Predictions**
+2. Upload an image of food. If you dont have one, use the images from `extras/food-images`
+3. Once the image is processed, **Predict** button appears. Click it.
+4. Once you click the **Predict** button, the model prediction takes place and the output will be displayed along with model's **Top-5 Predictions**
 
 ###                                                                          Video
 
@@ -39,41 +38,43 @@ Once an app is loaded,
 
 > If you actually want to know the Nuts and Bolts how the model was trained check out **[`model-training.ipynb`]() Notebook**
 
-1. ##### Imported Food101 dataset from **[Tensorflow Datasets](tesnorflow datsets)** Module.
+1. #### Imported Food101 dataset from **[Tensorflow Datasets](tesnorflow datsets)** Module.
 
-2. ##### Becoming one with the Data : *Visualise - Visualize - Visualize*
+2. #### Becoming one with the Data : *Visualise - Visualize - Visualize*
 
-3. ##### Setup Global dtype policy to **`mixed_float16`** to take implement of [**Mixed Precision Training**](https://www.tensorflow.org/guide/mixed_precision)
+3. #### Setup Global dtype policy to **`mixed_float16`** to take implement of [**Mixed Precision Training**](https://www.tensorflow.org/guide/mixed_precision)
 
    > Mixed precision is the use of both 16-bit and 32-bit floating-point types in a model during training to make it **run faster** and use **less memory**.
 
-4. ##### Building the Model Callbacks 
+4. #### Building the Model Callbacks 
 
    As we are dealing with a complex Neural Network (EfficientNetB0) its a good practice to have few call backs set up. Few callbacks I will be using throughtout this Notebook are :
 
-   * **TensorBoard Callback :** TensorBoard provides the visualization and tooling needed for machine learning experimentation
+   - **TensorBoard Callback :** TensorBoard provides the visualization and tooling needed for machine learning experimentation
 
-   - **ModelCheckPoint Callback : ** Used in conjunction with training  to save a model or weights (in a checkpoint file) at some interval, so the model or weights can be loaded later to continue the training from the state saved.
+   - **ModelCheckPoint Callback :** Used in conjunction with training  to save a model or weights (in a checkpoint file) at some interval, so the model or weights can be loaded later to continue the training from the state saved.
 
    - **EarlyStoppingCallback :**  Used to stop training when a monitored metric has stopped improving.
 
-   - **ReduceLROnPlateau : ** Reduce learning rate when a metric has stopped improving.
+   - **ReduceLROnPlateau :** Reduce learning rate when a metric has stopped improving.
 
-5. ##### Building a Feature Extraction Model
+5. #### Building a Feature Extraction Model
 
    Before Fine tuning, it's best practice to train a feature extraction model with custom top layers. And all other layers as frozen.
 
-6. ##### [Fine Tuning](https://www.tensorflow.org/tutorials/images/transfer_learning) our Feature Extracted Model
+6. #### [Fine Tuning](https://www.tensorflow.org/tutorials/images/transfer_learning) our Feature Extracted Model
 
    Once we have your Feature Extracted Model ready, we can unfreeze the layers and train it on data again.
+   
+> If you actually want to know the Nuts and Bolts how the model was trained check out **[`model-training.ipynb`]() Notebook**
 
-7. ##### Evaluating and Deploying out Model to Streamlit
+7. #### Evaluating and Deploying out Model to Streamlit
 
    Once we have out model ready, its cruicial to evaluate it on our custom data, the data our model has never seen.
 
    Training and evaluating a model on train, test data is cool but making predictions on our own realtime images is another level.
 
-   Once we are satisfied with results of the model, we can export is as a `.hdf5`  which can be used in future for model deployment 
+   Once we are satisfied with the results, we can export the model as a `.hdf5`  which can be used in future for model deployment.
 
 Once the model is exported then there comes the Deployment part. Check out  **[`app.py`](https://github.com/gauravreddy08/food-vision/blob/main/food-vision/app.py)** to get more insight on How I integrated it with Streamlit.
 
