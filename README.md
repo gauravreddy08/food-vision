@@ -96,5 +96,5 @@ Post your queries on the [Issues](https://github.com/gauravreddy08/food-vision/i
 
 
 
-> *Inspired by **Daniel Bourke's** CS329s Lecture*
+######                                              *Inspired by **Daniel Bourke's** CS329s Lecture*
 
