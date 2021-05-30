@@ -6,7 +6,7 @@ I worked out with a Pre-Trained Image Classification Model that comes with Keras
 
 ### Fun Fact 
 
-The Model actually beats the [**DeepFood**]() Paper's model which also trained on the same dataset
+The Model actually beats the [**DeepFood**](https://arxiv.org/pdf/1606.05675.pdf) Paper's model which also trained on the same dataset
 
 The Accuracy of DeepFood was **77.4%** and out models it **78.4%** . Difference of **1%** ain't much but the interesting is their model had to run for **2-3 days** while our's barely took **1hr** to build
 
@@ -37,7 +37,7 @@ Once an app is loaded,
 
 ## Okay Cool, How did you build it ?
 
-> If you actually want to know the Nuts and Bolts how the model was train check out **`model-training.ipynb` Notebook**
+> If you actually want to know the Nuts and Bolts how the model was trained check out **[`model-training.ipynb`]() Notebook**
 
 1. ##### Imported Food101 dataset from **[Tensorflow Datasets](tesnorflow datsets)** Module.
 
@@ -75,7 +75,7 @@ Once an app is loaded,
 
    Once we are satisfied with results of the model, we can export is as a `.hdf5`  which can be used in future for model deployment 
 
-Once the model is exported then there comes the Deployment part. Check out  **`app.py`** to get more insight on How I integrated it with Streamlit.
+Once the model is exported then there comes the Deployment part. Check out  **[`app.py`](https://github.com/gauravreddy08/food-vision/blob/main/food-vision/app.py)** to get more insight on How I integrated it with Streamlit.
 
 ## Breaking down the repo
 
@@ -91,7 +91,7 @@ At first glance the files in the repo may look intimidating and overwhelming. To
 
 ## Questions ?
 
-Post your queries on the [Discussion]() tab, else contact me : gauravreddy008@gmail.com
+Post your queries on the [Issues](https://github.com/gauravreddy08/food-vision/issues) tab, else contact me : gauravreddy008@gmail.com
 
 
 
