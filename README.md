@@ -38,7 +38,7 @@ Once an app is loaded,
 
 > If you actually want to know the Nuts and Bolts how the model was trained check out **[`model-training.ipynb`]() Notebook**
 
-1. #### Imported Food101 dataset from **[Tensorflow Datasets](tesnorflow datsets)** Module.
+1. #### Imported Food101 dataset from **[Tensorflow Datasets](https://www.tensorflow.org/datasets)** Module.
 
 2. #### Becoming one with the Data : *Visualise - Visualize - Visualize*
 
