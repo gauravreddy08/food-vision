@@ -4,15 +4,15 @@ As an introductory project to myself, I built an end-to-end **CNN Image Classifi
 
 I worked out with a Pre-Trained Image Classification Model that comes with Keras and then retarining it on the infamous **Food101** Dataset.
 
-#### Fun Fact 
+### Fun Fact 
 
 The Model actually beats the [**DeepFood**]() Paper's model which also trained on the same dataset
 
 The Accuracy of DeepFood was **77.4%** and out models it **78.4%** . Difference of **1%** ain't much but the interesting is their model had to run for **2-3 days** while our's barely took **1hr** to build
 
-###### **Dataset used :**  **`Food101`**
+> ###### **Dataset used :**  **`Food101`**
 
-###### **Models Used : ** **`EfficientNetB0`** ,  **`InceptionNetV3`**
+> ###### **Models Used :** **`EfficientNetB0`** ,  **`InceptionNetV3`**
 
 ## Looks Great, How can I use it ?
 
@@ -39,7 +39,7 @@ Once an app is loaded,
 
 > If you actually want to know the Nuts and Bolts how the model was train check out **`model-training.ipynb` Notebook**
 
-1. ##### Imported Food101 dataset from **[Tensorflow Datasets]()** Module.
+1. ##### Imported Food101 dataset from **[Tensorflow Datasets](tesnorflow datsets)** Module.
 
 2. ##### Becoming one with the Data : *Visualise - Visualize - Visualize*
 
