@@ -92,7 +92,7 @@ At first glance the files in the repo may look intimidating and overwhelming. To
 
 ## Questions ?
 
-Post your queries on the [Issues](https://github.com/gauravreddy08/food-vision/issues) tab, else contact me : gauravreddy008@gmail.com
+Post your queries on the [**Discussions**](https://github.com/gauravreddy08/food-vision/discussions) tab, else contact me : gauravreddy008@gmail.com
 
 
 
