@@ -25,7 +25,8 @@ Once I got the App working on my local device I then deployed it using Streamlit
 
 > The app may take a couple of seconds to load for the first time, but it works perfectly fine.
 
-![Screenshot 2021-05-29 at 6.01.44 PM](./extras/page.png)
+![Screenshot 2021-05-29 at 6.01.44 PM](./extras/app video.mov)
+
 Once an app is loaded, 
 
 1. Upload an image of food. If you dont have one, use the images from `food-images/`
@@ -33,7 +34,6 @@ Once an app is loaded,
 3. Once you click the **`Predict`** button, the model prediction takes place and the output will be displayed along with the model's **Top-5 Predictions**
 4. And voilà, there you go.
 
-###                                                                          Video
 
 ## Okay Cool, How did you build it ?
 
