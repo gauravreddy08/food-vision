@@ -64,7 +64,7 @@ st.sidebar.markdown(body="""
 <a href="https://github.com/gauravreddy08" target="blank"><img align="center" src="https://bit.ly/3c2onZS" alt="16034820" height="40" width="40" /></a>
  <a href="https://instagram.com/gaurxv_reddy" target="blank"><img align="center" src="https://bit.ly/3oZABHZ" alt="gaurxv_reddy" height="40" width="40" /></a>
 
-""", allow_unsafe_html=True)
+""", unsafe_allow_html=True)
 
 if not file:
     st.warning("Please upload an image")
