@@ -25,7 +25,7 @@ Once I got the App working on my local device I then deployed it using Streamlit
 
 > The app may take a couple of seconds to load for the first time, but it works perfectly fine.
 
-![Screenshot 2021-05-29 at 6.01.44 PM](./extras/video app.gif)
+![Screenshot 2021-05-29 at 6.01.44 PM](./extras/app.png)
 
 Once an app is loaded, 
 
