@@ -95,5 +95,5 @@ Post your queries on the [**Discussions**](https://github.com/gauravreddy08/food
 
 
 
-######                                              *Inspired by **Daniel Bourke's** CS329s Lecture*
+######                                             *Inspired by **Daniel Bourke's** CS329s Lecture*
 
