@@ -41,13 +41,6 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
 **Model :** **`EfficientNetB1`**
 
 **Dataset :** **`Food101`**
-
-
-#### **Fun Fact :**
-
-The Model actually beats the DeepFood Paper's model which also trained on the same dataset.
- 
-The Accuracy of [**DeepFood**](https://arxiv.org/abs/1606.05675) was **77.4%** and our model's is **85%**. Difference of **8%** ain't much but the interesting thing is, DeepFood's model took 2-3 days to train while our's was around 60min.
 """)
 
 
