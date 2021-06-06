@@ -36,9 +36,9 @@ It can identify over 100 different food classes
 
 It is based upom a pre-trained Image Classification Model that comes with Keras and then retrained on the infamous **Food101 Dataset**.
 
-**Accuracy :** **`78.4%`**
+**Accuracy :** **`85%`**
 
-**Model :** **`EfficientNetB0`**
+**Model :** **`EfficientNetB1`**
 
 **Dataset :** **`Food101`**
 """)
