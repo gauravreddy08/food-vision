@@ -2,17 +2,19 @@
 
 As an introductory project to myself, I built an end-to-end **CNN Image Classification Model** which identifies the food in your image. 
 
-I worked out with a Pre-Trained Image Classification Model that comes with Keras and then retrained it on the infamous **Food101** Dataset.
+I worked out with a pre-trained Image Classification Model that comes with Keras and then retrained it on the infamous **Food101** Dataset.
 
 ### Fun Fact 
 
 The Model actually beats the [**DeepFood**](https://arxiv.org/pdf/1606.05675.pdf) Paper's model which also trained on the same dataset.
 
-The Accuracy of DeepFood was **77.4%** and our models it **78.4%** . Difference of **1%** ain't much but the interesting thing is, DeepFood's model took **2-3 days** to train while our's barely took **30min**.
+The Accuracy of DeepFood was **77.4%** and our models is **85%** . Difference of **8%** ain't much, but the interesting thing is, DeepFood's model took **2-3 days** to train while our's barely took **30min**.
 
-> ###### **Dataset used :**  **`Food101`**
+> ##### **Dataset used :**  **`Food101`**
 
-> ###### **Model Used :** **`EfficientNetB0`**
+> ##### **Model Used :** **`EfficientNetB1`**
+
+> ##### **Accuracy :** **`85%`**
 
 ## Looks Great, How can I use it ?
 
@@ -53,27 +55,23 @@ Once an app is loaded,
 
    - **TensorBoard Callback :** TensorBoard provides the visualization and tooling needed for machine learning experimentation
 
-   - **ModelCheckPoint Callback :** Used in conjunction with training to save a model or weights (in a checkpoint file) at some interval, so the model or weights can be loaded later to continue the training from the state saved.
-
    - **EarlyStoppingCallback :** Used to stop training when a monitored metric has stopped improving.
 
    - **ReduceLROnPlateau :** Reduce learning rate when a metric has stopped improving.
 
-5. #### Building a Feature Extraction Model
 
-   Before Fine tuning, it's best practice to train a feature extraction model with custom top layers. And all other layers as frozen.
+5. #### Built a  [Fine Tuning](https://www.tensorflow.org/tutorials/images/transfer_learning)  Model
 
-6. #### [Fine Tuning](https://www.tensorflow.org/tutorials/images/transfer_learning) our Feature Extracted Model
-
-   Once we have your Feature Extracted Model ready, we can unfreeze the layers and train it on data again.
+   This part tool the longest. In Deep Learning, you have to know which nob does what. Once yoy get experienced you'll what nobs you should turn to get the results you want. 
+   **Architecture** : **`EffficientNetB1`**
    
-> If you actually want to know the Nuts and Bolts how the model was trained check out **[`model-training.ipynb`]() Notebook**
+> Again if you want to dive deeper on how the model was trained check out **[`model-training.ipynb`]() Notebook**
 
-7. #### Evaluating and Deploying out Model to Streamlit
+6. #### Evaluating and Deploying out Model to Streamlit
 
-   Once we have our model ready, its cruicial to evaluate it on our custom data : *the data our model has never seen*.
+   Once we have our model ready, its cruicial to evaluate it on our **custom data** : *the data our model has never seen*.
 
-   Training and evaluating a model on train, test data is cool, but making predictions on our own realtime images is another level.
+   Training and evaluating a model on train and test data is cool, but making predictions on our own realtime images is another level.
 
    Once we are satisfied with the results, we can export the model as a `.hdf5`  which can be used in future for model deployment.
 
@@ -86,7 +84,7 @@ At first glance the files in the repo may look intimidating and overwhelming. To
 * `.gitignore` : tells what files/folders to ignore when committing
 * `app.py`  : Our Food Vision app built using Streamlit
 * `utils.py`  : Some of used fuctions in  `app.py`
-* `model-training.ipynb`  : Google Colab Notebook used to train the models
+* `model-training.ipynb`  : Google Colab Notebook used to train the model
 * `model/`  : Contains all the models used as *.hfd5* files
 * `requirements.txt`  : List of required dependencies required to run `app.py`
 * `extras/`  : Has some miscellaneous images and files used to write this README Document
