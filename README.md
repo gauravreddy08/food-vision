@@ -39,7 +39,7 @@ Once an app is loaded,
 
 ## Okay Cool, How did you build it ?
 
-> If you actually want to know the Nuts and Bolts how the model was trained check out **[`model-training.ipynb`]() Notebook**
+> If you actually want to know the Nuts and Bolts how the model was trained check out **[`model-training.ipynb`](https://github.com/gauravreddy08/food-vision/blob/main/model_training.ipynb) Notebook**
 
 1. #### Imported Food101 dataset from **[Tensorflow Datasets](https://www.tensorflow.org/datasets)** Module.
 
@@ -65,7 +65,7 @@ Once an app is loaded,
    This part tool the longest. In Deep Learning, you have to know which nob does what. Once yoy get experienced you'll what nobs you should turn to get the results you want. 
    **Architecture** : **`EffficientNetB1`**
    
-> Again if you want to dive deeper on how the model was trained check out **[`model-training.ipynb`]() Notebook**
+> Again if you want to dive deeper on how the model was trained check out **[`model-training.ipynb`](https://github.com/gauravreddy08/food-vision/blob/main/model_training.ipynb) Notebook**
 
 6. #### Evaluating and Deploying out Model to Streamlit
 
