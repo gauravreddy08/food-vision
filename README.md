@@ -1,5 +1,8 @@
 # Food Vision :hamburger: :camera:
 
+https://user-images.githubusercontent.com/57211163/214333702-7a666c70-3499-470d-8b39-fc37374950ab.mp4
+
+
 As an introductory project to myself, I built an end-to-end **CNN Image Classification Model** which identifies the food in your image. 
 
 I worked out with a pre-trained Image Classification Model that comes with Keras and then retrained it on the infamous **Food101** Dataset.
@@ -27,12 +30,7 @@ Once I got the App working on my local device I then deployed it using Streamlit
 
 > The app may take a couple of seconds to load for the first time, but it works perfectly fine.
 
-<p align="center">
-  <img src="./extras/video-app.gif" alt="animated" />
-</p>
-
-
-
+https://user-images.githubusercontent.com/57211163/214333702-7a666c70-3499-470d-8b39-fc37374950ab.mp4
 
 Once an app is loaded, 
 
