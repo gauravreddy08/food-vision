@@ -23,11 +23,16 @@ Finally after training the model, I have exported it as `.hdf5` files and then i
 **Streamlit** turns data scripts into shareable web apps in minutes. 
 Once I got the App working on my local device I then deployed it using Streamlit’s invite-only **[sharing feature](https://streamlit.io/sharing)**
 
-### To view the Deployed app, [Click here](https://share.streamlit.io/gauravreddy08/food-vision/main/food-vision/app.py)
+### Check the [deployed app](https://share.streamlit.io/gauravreddy08/food-vision/main/food-vision/app.py), or the [demo video](https://github.com/gauravreddy08/food-vision/blob/main/extras/app%20video.mp4?raw=true)
 
 > The app may take a couple of seconds to load for the first time, but it works perfectly fine.
 
-![Screenshot 2021-05-29 at 6.01.44 PM](./extras/app.png)
+<p align="center">
+  <img src="./extras/video-app.gif" alt="animated" />
+</p>
+
+
+
 
 Once an app is loaded, 
 
