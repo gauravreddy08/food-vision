@@ -1,6 +1,5 @@
 # Food Vision :hamburger: :camera:
 
-https://user-images.githubusercontent.com/57211163/214333702-7a666c70-3499-470d-8b39-fc37374950ab.mp4
 
 
 As an introductory project to myself, I built an end-to-end **CNN Image Classification Model** which identifies the food in your image. 
